@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Polygot</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Your HTML here -->
+    <div class="container">
+      <section class="header">
+        <div class="header-image">
+          <img src="/assets/parrot.png" alt="Parrot" />
+        </div>
+        <div class="header-title">
+          <h1>PolyGot</h1>
+          <p>Perfect Translation Every Time</p>
+        </div>
+      </section>
+      <section class="form-container">
+        <form id="form">
+          <div class="your-text">
+            <p id="text-to-translate">Text To Translate 👇</p>
+            <textarea name="your-text" id="your-text"></textarea>
+          </div>
+          <div class="language">
+            <p id="select-lang">Select Language 👇</p>
+            <div id="radio-container">
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="french"
+                  name="language"
+                  value="french"
+                />
+                <label for="french"
+                  >French <img src="./assets/fr-flag.png" alt="french flag"
+                /></label>
+              </div>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="spanish"
+                  name="language"
+                  value="spanish"
+                />
+                <label for="spanish"
+                  >Spanish <img src="./assets/sp-flag.png" alt="spanish flag"
+                /></label>
+              </div>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="japanese"
+                  name="language"
+                  value="japanese"
+                />
+                <label for="japanese"
+                  >Japanese
+                  <img src="./assets/jpn-flag.png" alt="japanese flag"
+                /></label>
+              </div>
+            </div>
+            <div class="results" id="results"></div>
+          </div>
+          <button type="submit">Translate</button>
+        </form>
+      </section>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
